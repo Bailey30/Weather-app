@@ -1,13 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Roboto:wght@100;300;400;500&family=Rubik:wght@300;400&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.windcont {
+  width: 25px;
+  aspect-ratio: 1;
+
+  
+}
+.windimg {
+  width: 100%;
+  /* color: white; */
+}
+.m10 {
+  margin: 10px;
+}
+
+.forecast {
+  text-align: center;
+  width: 35%;
+  
+ 
+  background-color: #437AFF;
+  color: white;
+  
+}
+.forecastcont {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+  letter-spacing: 1px;
+  border-top: 1px solid white;
+  width: 100%;
+  
+}
+
+.weatherimg {
+  height: 60px;
+}
+
+.app {
+  
+  width: 300px;
+  border-radius: 20px;
+  /* background-color: white; */
+  height: 600px;
+}
+.resultscont {
+  text-align: center;
+  background-color: #437AFF;
+  border-radius: 20px;
+  width: 250px;
+  margin: 10px 0;
+  padding-top: 10px;
+  color: white;
+  /* border: 1px solid white; */
+  overflow: hidden;
+}
+.cityInput {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.btn {
+  display: block;
+  margin: 5px auto;
+  align-self: center;
+  border: none;
+  background-color: #437AFF;
+  border-radius: 20px;
+  color: white;
+  height: 35px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  
+}
+.btn:hover {
+  background-color: #5688fc;
+  
+}
+.input {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.tempfont {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 20px;
+  margin-bottom: 0;
+}
+.datefont {
+  font-size: 13px;
+  font-weight: 200;
+}
+.descriptionfont {
+  font-size: 25px;
+  margin: 10px;
+  letter-spacing: 1px;
+}
+.forecasttempfont{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 8px;
+  margin-bottom: 20px;
+}
+.dayfont {
+  font-weight: 100;
+  margin: 8px;
+  font-size: 10px;
+  padding-top: 5px;
 }
